@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #f0f2f5;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 90%;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 1.2s ease-out;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-description {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.cta-button:hover {
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: #ff5722;
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 30%;
+  margin: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.feature-item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: #ff5722;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff5722;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 4rem 2rem;
+  background: #f5f5f5;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-item p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.testimonial-item h4 {
+  font-size: 1rem;
+  color: #666;
+}
+
+.testimonial-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+/* CTA Section */
+.cta {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ff5722, #ff9800);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.cta h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #ff5722;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background: #ffebee;
+  transform: scale(1.1);
+}
+
+/* Footer Section */
+.footer {
+  padding: 1rem;
+  background: #333;
+  color: white;
+  text-align: center;
+  font-size: 0.875rem;
+}
+@media (max-width: 768px) {
+  .feature-item {
+    width: 80%;
+  }
+}
